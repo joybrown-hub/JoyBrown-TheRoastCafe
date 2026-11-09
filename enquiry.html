@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiries | The Roast Cafe</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="The Roast Cafe Logo" class="circular-img" width="150">
+        <h1>Get in Touch & Order Wholesale</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Menu & Products</a></li>
+            <li><a href="enquiry.html">Enquiries</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="enquiry-layout">
+            <div class="enquiry-copy">
+                <p class="eyebrow">Let’s brew something great</p>
+                <h2>Send us your enquiry</h2>
+                <p>Whether you’re looking for wholesale beans, office coffee services, or a memorable café event experience, our team is ready to help.</p>
+
+                <div class="info-panel">
+                    <h3>We can help with</h3>
+                    <ul>
+                        <li>Wholesale coffee orders</li>
+                        <li>Corporate catering</li>
+                        <li>Private event bookings</li>
+                        <li>General café enquiries</li>
+                    </ul>
+                </div>
+
+                <div class="contact-mini">
+                    <p><strong>Email:</strong> JoyBrown@theroastcafe.co.za</p>
+                    <p><strong>Call:</strong> +27 11 234 5678</p>
+                    <p><strong>Hours:</strong> Mon–Sat, 7:00–18:00</p>
+                </div>
+            </div>
+
+            <div class="form-panel">
+                <h3>Enquiry Form</h3>
+                <p>Tell us what you need and we’ll get back to you soon.</p>
+                <form action="#" method="post">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="enquiry-type">Enquiry Category</label>
+                    <select id="enquiry-type" name="enquiry-type">
+                        <option value="wholesale">Wholesale Bean Order</option>
+                        <option value="catering">Event & Office Catering</option>
+                        <option value="general">General Questions</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Submit Enquiry</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 The Roast Cafe. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu & Products | The Roast Cafe</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="The Roast Cafe Logo" width="150">
+        <h1>Our Coffee & Menu</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Menu & Products</a></li>
+            <li><a href="enquiry.html">Enquiries</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="menu-intro">
+            <h2>Freshly brewed favourites</h2>
+            <p>Select your preferred café treats and build your order below.</p>
+
+            <div class="cart-bar">
+                <span>Selected Items: <strong id="cart-count">0</strong></span>
+                <span>Total: <strong id="order-total">R0.00</strong></span>
+                <button type="button" id="proceed-btn" class="btn-primary">Proceed to Enquiry</button>
+            </div>
+        </section>
+
+        <section class="product-category">
+            <h2>Espresso Bar</h2>
+            <div class="product-grid">
+                <article class="card product-card" data-name="Single Origin Espresso" data-price="28">
+                    <img src="images/images (2).jpg" alt="Single Origin Espresso" class="product-image">
+                    <div class="product-details">
+                        <h3>Single Origin Espresso</h3>
+                        <p>Bold, rich, with chocolate and berry undertones.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">R28.00</span>
+                        <button type="button" class="select-btn">Select</button>
+                    </div>
+                </article>
+
+                <article class="card product-card" data-name="Flat White" data-price="36">
+                    <img src="images/images (3).jpg" alt="Flat White" class="product-image">
+                    <div class="product-details">
+                        <h3>Flat White</h3>
+                        <p>Double shot espresso with silky microfoam milk.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">R36.00</span>
+                        <button type="button" class="select-btn">Select</button>
+                    </div>
+                </article>
+
+                <article class="card product-card" data-name="Cold Brew" data-price="40">
+                    <img src="images/images (4).jpg" alt="Cold Brew" class="product-image">
+                    <div class="product-details">
+                        <h3>Cold Brew</h3>
+                        <p>Steeped for 18 hours for maximum smoothness.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">R40.00</span>
+                        <button type="button" class="select-btn">Select</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="product-category">
+            <h2>Artisanal Bakery</h2>
+            <div class="product-grid">
+                <article class="card product-card" data-name="Butter Croissant" data-price="32">
+                    <img src="images/images (5).jpg" alt="Butter Croissant" class="product-image">
+                    <div class="product-details">
+                        <h3>Butter Croissant</h3>
+                        <p>Freshly baked, flaky and golden with buttery layers.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">R32.00</span>
+                        <button type="button" class="select-btn">Select</button>
+                    </div>
+                </article>
+
+                <article class="card product-card" data-name="Chicken Mayo Sandwich" data-price="38">
+                    <img src="images/images (6).jpg" alt="Chicken Mayo Sandwich" class="product-image">
+                    <div class="product-details">
+                        <h3>Chicken Mayo Sandwich</h3>
+                        <p>Loaded with fresh chicken and creamy mayo.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">R38.00</span>
+                        <button type="button" class="select-btn">Select</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="product-category">
+            <h2>Whole Bean Coffee Bags</h2>
+            <div class="product-grid">
+                <article class="card product-card" data-name="House Blend 250g" data-price="120">
+                    <img src="images/images (7).jpg" alt="House Blend 250g" class="product-image">
+                    <div class="product-details">
+                        <h3>House Blend 250g</h3>
+                        <p>Balanced medium roast with caramel and hazelnut notes.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">R120.00</span>
+                        <button type="button" class="select-btn">Select</button>
+                    </div>
+                </article>
+
+                <article class="card product-card" data-name="Ethiopian 250g" data-price="145">
+                    <img src="images/images (8).jpg" alt="Ethiopian 250g" class="product-image">
+                    <div class="product-details">
+                        <h3>Ethiopian 250g</h3>
+                        <p>Light roast featuring floral and citrus notes.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">R145.00</span>
+                        <button type="button" class="select-btn">Select</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="order-summary-section" class="order-summary">
+            <h2>Your Selected Order</h2>
+            <ul id="selected-items-list">
+                <li>No products selected yet. Click “Select” on a menu item to add it.</li>
+            </ul>
+            <p class="summary-total"><strong>Total Estimate: <span id="summary-total">R0.00</span></strong></p>
+            <button type="button" id="proceed-enquiry-btn" class="btn-primary">Proceed to Enquiry</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 The Roast Cafe. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
